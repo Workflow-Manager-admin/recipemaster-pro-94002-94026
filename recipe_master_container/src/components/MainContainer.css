@@ -1,0 +1,29 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows the container to take up available space */
+  padding-top: 60px; /* Height of the fixed navbar, adjust if navbar height changes */
+}
+
+.main-container-header {
+  background-color: #2a2a2a; /* Slightly lighter than kavia-dark for distinction */
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.main-content-area {
+  flex-grow: 1; /* Ensures this area takes up available vertical space */
+  /* The .container class for width restriction will be applied to children as needed */
+}
+
+.main-container-footer {
+  background-color: #2a2a2a;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
