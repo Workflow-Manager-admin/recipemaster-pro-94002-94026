@@ -1,35 +1,36 @@
 import React from 'react';
 import './App.css';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return (
     <div className="app">
       <nav className="navbar">
         <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">RM</span> RecipeMaster Pro
             </div>
-            <button className="btn">Template Button</button>
+            {/* Removed template button from navbar */}
           </div>
         </div>
       </nav>
 
-      <main>
+      <MainContainer>
+        {/* Hero content is now a child of MainContainer */}
         <div className="container">
           <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
+            <div className="subtitle">Welcome to</div>
             
-            <h1 className="title">recipe_master_container</h1>
+            <h1 className="title">RecipeMaster Pro</h1>
             
             <div className="description">
-              Start building your application.
+              Your ultimate companion for recipe creation, ingredient tracking, meal planning, and nutritional analysis.
             </div>
-            
-            <button className="btn btn-large">Button</button>
+            {/* Removed generic button from hero */}
           </div>
         </div>
-      </main>
+      </MainContainer>
     </div>
   );
 }
